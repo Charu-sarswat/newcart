@@ -261,8 +261,7 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  gap: 8px;
+  gap: 10px;
 }
 
 .property-image,
@@ -273,31 +272,25 @@
 }
 
 .property-title {
-  font-size: 1.15rem;
-  font-weight: 700;
+  font-size: 1.1rem;
+  font-weight: 600;
   color: #222;
-  margin-bottom: 4px;
+  margin-bottom: 0;
   text-align: left;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .property-location {
-  color: #1976d2;
-  font-size: 1rem;
-  margin-bottom: 8px;
+  color: #888;
+  font-size: 0.95rem;
+  margin-bottom: 0;
   text-align: left;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .property-price {
   font-size: 1.3rem;
   font-weight: 700;
-  color: #1976d2;
-  margin-bottom: 6px;
+  color: #222;
+  margin-bottom: 0;
   text-align: left;
 }
 
@@ -306,6 +299,10 @@
   font-size: 0.98rem;
   margin-bottom: 8px;
   text-align: left;
+}
+
+.property-card * {
+  text-align: left !important;
 }
 
 /* Mobile styles */
