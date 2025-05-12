@@ -232,7 +232,7 @@
 .property-card {
   flex: 1 1 300px;
   min-width: 300px;
-  max-width: 1fr;
+  max-width: 350px;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(60, 60, 60, 0.15);
   overflow: hidden;
