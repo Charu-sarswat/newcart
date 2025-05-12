@@ -7,11 +7,11 @@ export default function ImageGallery({ images = [] }) {
 
     return (
         <div style={{ textAlign: 'center' }}>
-            <div>
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
                 <img
                     src={images[selected]}
                     alt="Main"
-                    style={{ width: 500, height: 300, objectFit: 'cover', borderRadius: 10 }}
+                    style={{ width: '100%', maxWidth: 1000, height: 400, objectFit: 'cover', borderRadius: 10 }}
                 />
             </div>
             <div style={{ display: 'flex', justifyContent: 'center', marginTop: 16, gap: 12 }}>

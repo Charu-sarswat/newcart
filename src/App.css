@@ -71,14 +71,20 @@
 
 .property-details-columns {
   display: flex;
-  max-width: 1300px;
+  max-width: 1400px;
   margin: 0 auto;
-  gap: 40px;
+  gap: 100px;
   align-items: flex-start;
+  position: relative;
+}
+
+.property-details-columns::before {
+  display: none;
 }
 
 .property-details-left {
-  flex: 2;
+  width: 900px;
+  max-width: 100%;
   min-width: 0;
 }
 
@@ -91,73 +97,56 @@
 .sticky-card {
   position: sticky;
   top: 32px;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(60, 60, 60, 0.10);
-  padding: 24px 20px;
+  background: #f7faff;
+  border: 2px solid #d0e3f7;
+  box-shadow: 0 6px 24px rgba(25, 118, 210, 0.10);
+  border-radius: 16px;
+  padding: 32px 26px;
   margin-bottom: 24px;
 }
 
-.property-price {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #222;
-  margin-bottom: 10px;
-}
-
-.property-summary {
-  margin-bottom: 18px;
-}
-
-.property-title {
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin-bottom: 4px;
-}
-
-.property-location {
+.sticky-card .property-price {
   color: #1976d2;
-  font-size: 0.98rem;
-  margin-bottom: 10px;
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 12px;
 }
 
-.posted-by,
-.posted-in {
+.sticky-card .property-summary {
+  color: #333;
+  font-size: 1.1rem;
   margin-bottom: 16px;
 }
 
-.posted-label {
-  font-weight: 600;
-  color: #555;
-  margin-bottom: 2px;
+.sticky-card .property-title {
+  color: #1976d2;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 6px;
 }
 
-.posted-value {
-  color: #222;
-  font-size: 1rem;
-  margin-bottom: 2px;
-}
-
-.posted-meta {
+.sticky-card .property-location {
   color: #888;
-  font-size: 0.95rem;
-  margin-bottom: 8px;
+  font-size: 1rem;
+  margin-bottom: 12px;
 }
 
-.chat-button {
-  width: 100%;
-  padding: 10px;
+.sticky-card .posted-label {
+  color: #1976d2;
+  font-weight: 700;
+}
+
+.sticky-card .chat-button {
   background: #1976d2;
   color: #fff;
-  border: none;
-  border-radius: 4px;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  margin-top: 8px;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-top: 12px;
+  transition: background 0.2s;
 }
 
-.chat-button:hover {
+.sticky-card .chat-button:hover {
   background: #1256a3;
 }
 
@@ -165,17 +154,20 @@
   width: 100%;
   height: 180px;
   background: #f5f5f5;
-  border-radius: 6px;
-  margin-top: 10px;
+  border: 1.5px solid #d0e3f7;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+  border-radius: 8px;
+  margin-top: 18px;
 }
 
 .details-section,
 .description-section {
   background: #fff;
-  border-radius: 8px;
-  padding: 25px;
-  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(60, 60, 60, 0.08);
   border: 1px solid #e0e0e0;
+  margin-bottom: 32px;
+  padding: 25px;
 }
 
 .details-section h3,
@@ -303,6 +295,38 @@
 
 .property-card * {
   text-align: left !important;
+}
+
+.property-main-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.property-thumbnails {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  margin: 12px 0;
+}
+
+.property-details-left>div:first-child {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.property-details-left .property-thumbnails {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 24px auto;
+}
+
+.property-details-left>*:not(:last-child) {
+  margin-bottom: 32px;
 }
 
 /* Mobile styles */
