@@ -6,7 +6,7 @@ import house4 from '../assets/house4.png';
 export const properties = [
     {
         id: '1',
-        images: [house1, house2, house3, house4],
+        images: [house1, house2, house3, house4, house1, house2, house3, house4],
         price: '₹ 49,99,999',
         beds: 2,
         baths: 2,

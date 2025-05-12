@@ -164,14 +164,13 @@
   border: 1px solid #e0e0e0;
   margin-bottom: 28px;
   padding: 28px 28px 18px 28px;
+  color: #111;
 }
 
 .details-section h3,
-.description-section h3 {
-  font-size: 22px;
-  color: #1976d2;
-  margin-bottom: 18px;
-  font-weight: 700;
+.description-section h3,
+.description-section h4 {
+  color: #111;
 }
 
 .details-grid {
@@ -188,32 +187,14 @@
   font-size: 1.05rem;
 }
 
-.detail-item span:first-child {
-  color: #888;
-}
-
+.detail-item span:first-child,
 .detail-item span:last-child {
-  font-weight: 600;
-  color: #222;
-}
-
-.description-section h4 {
-  font-size: 18px;
-  color: #1976d2;
-  margin: 18px 0 10px;
-  font-weight: 600;
+  color: #111;
 }
 
 .description-section p,
 .description-section li {
-  color: #444;
-  line-height: 1.7;
-  font-size: 1.05rem;
-}
-
-.description-section ul {
-  list-style: disc inside;
-  padding-left: 18px;
+  color: #111;
 }
 
 .property-card {
@@ -304,8 +285,9 @@
 
 .property-thumbnails {
   display: flex;
-  gap: 14px;
-  margin-bottom: 28px;
+  gap: 32px;
+  margin: 32px 48px 48px 48px;
+  justify-content: center;
 }
 
 .property-thumbnail {
@@ -442,4 +424,8 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.details-section {
+  margin-top: 32px;
 }
