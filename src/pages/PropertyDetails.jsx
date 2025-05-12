@@ -1,20 +1,16 @@
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import ImageGallery from '../components/ImageGallery';
 import './PropertyDetails.css';
 import { properties } from '../data/properties';
 
 export default function PropertyDetails() {
     const { id } = useParams();
-    const navigate = useNavigate();
     const property = properties.find(p => p.id === id);
 
     if (!property) return <div>Property not found</div>;
 
     return (
         <div className="property-details-main">
-            <button onClick={() => navigate('/')} style={{ margin: '20px', padding: '8px 16px', fontSize: '16px', borderRadius: '6px', border: '1px solid #1976d2', background: '#1976d2', color: '#fff', cursor: 'pointer' }}>
-                ← Back to Home
-            </button>
             <div className="property-details-columns">
                 {/* LEFT COLUMN */}
                 <div className="property-details-left">
